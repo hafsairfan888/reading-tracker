@@ -1,0 +1,92 @@
+/* Styling for the wide, full-width colored bands that
+   divide the page into numbered sections (Indicators, Segments, etc.). */
+
+      .section-band {
+        border-bottom: 3px solid var(--c1);
+        padding: 56px 0 60px;
+      }
+
+      .band-inner {
+        width: 92%;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 22px;
+      }
+
+      .band-columns {
+        background: var(--c2);
+      }
+
+      .columns-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+        align-items: stretch;
+      }
+
+      .column-panel {
+        border: 3px solid var(--c1);
+        border-radius: 26px;
+        padding: 30px 26px 32px;
+        box-shadow: var(--shadow-md);
+        display: flex;
+        flex-direction: column;
+        height: 520px;
+      }
+
+      .column-indicators {
+        background: var(--c13);
+      }
+
+      .column-segments {
+        background: var(--c5);
+      }
+
+      .column-panel .section-head {
+        margin-top: 0;
+      }
+
+      .column-panel .card {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+      }
+
+      .scroll-list {
+        flex: 1;
+        min-height: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-right: 6px;
+        margin-right: -6px;
+        scrollbar-width: thin;
+        scrollbar-color: var(--c1) transparent;
+      }
+
+      .scroll-list::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .scroll-list::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      .scroll-list::-webkit-scrollbar-thumb {
+        background: var(--c1);
+        border-radius: 10px;
+      }
+
+      .band-preview {
+        background: var(--c11);
+        border-bottom: none;
+      }
+
+      .column-preview {
+        height: auto;
+        background: var(--c14);
+      }
+
+      .section-band .section-head {
+        margin-top: 0;
+      }

@@ -1,0 +1,93 @@
+/* Styling for the dropdown theme-selector menu in the
+   toolbar. */
+
+      .theme-menu-wrap {
+        position: relative;
+      }
+
+      .theme-menu {
+        display: none;
+        position: absolute;
+        top: 48px;
+        right: 0;
+        z-index: 250;
+        background: var(--c2);
+        border: 3px solid var(--c1);
+        border-radius: 16px;
+        box-shadow: var(--shadow-md);
+        padding: 16px;
+        width: 280px;
+        max-width: 80vw;
+      }
+
+      .theme-menu.open {
+        display: block;
+      }
+
+      .theme-menu-title {
+        display: block;
+        font-family: 'Fredoka', sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: .04em;
+        margin-bottom: 10px;
+        color: var(--c1);
+      }
+
+      .theme-options {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .theme-swatch {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        background: #fff;
+        border: 2px solid var(--c1);
+        border-radius: 14px;
+        padding: 10px 6px;
+        box-shadow: 2px 2px 0 var(--c1);
+        transition: transform .08s ease, box-shadow .08s ease;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .theme-swatch:hover {
+        transform: translate(-1px, -1px);
+        box-shadow: 4px 4px 0 var(--c1);
+      }
+
+      .theme-swatch:active {
+        transform: translate(2px, 2px);
+        box-shadow: none;
+      }
+
+      .theme-swatch.active {
+        background: var(--c4);
+      }
+
+      .theme-swatch-dots {
+        display: flex;
+        gap: 3px;
+      }
+
+      .theme-swatch-dots span {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        border: 1.5px solid var(--c1);
+        display: block;
+      }
+
+      .theme-swatch-label {
+        font-family: 'Fredoka', sans-serif;
+        font-weight: 600;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: .03em;
+        color: var(--c1);
+      }

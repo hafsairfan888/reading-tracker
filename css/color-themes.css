@@ -1,0 +1,168 @@
+/* Defines the color palette as generic CSS variables
+   (c1-c14, mapped to roles like text, banner, card, sidebar via how
+   they're used elsewhere), plus the alternate color themes selectable
+   from the theme menu. */
+
+      :root {
+        --c1: #171310;
+        --c2: #FFF6E6;
+        --c3: #FFE066;
+        --c4: #FFD23F;
+        --c5: #FFB876;
+        --c6: #FF9A56;
+        --c7: #FFC9E3;
+        --c8: #FF9FCE;
+        --c9: #DCC9FF;
+        --c10: #C6A8FF;
+        --c11: #BFF2D8;
+        --c12: #9BE8C0;
+        --c13: #BFE3FF;
+        --c14: #9CD3FF;
+        --shadow-sm: 3px 3px 0 var(--c1);
+        --shadow-md: 6px 6px 0 var(--c1);
+        --shadow-lg: 9px 9px 0 var(--c1);
+      }
+
+      [data-theme="jewel"] {
+        --c2: #F4F0FA;
+        --c3: #8E24AA;
+        --c4: #6A1B7A;
+        --c5: #E63950;
+        --c6: #C41E3A;
+        --c7: #E91E8C;
+        --c8: #C4127A;
+        --c9: #FFC72C;
+        --c10: #E6A800;
+        --c11: #3DDDA8;
+        --c12: #00B87D;
+        --c13: #2979FF;
+        --c14: #1A5FD9;
+      }
+
+      [data-theme="coral"] {
+        --c2: #FBEFF2;
+        --c3: #E0507A;
+        --c4: #B93460;
+        --c5: #F2994A;
+        --c6: #D9782E;
+        --c7: #F0A8BE;
+        --c8: #006f88;
+        --c9: #7A2048;
+        --c10: #4A1129;
+        --c11: #F8D9E2;
+        --c12: #EFB8C8;
+        --c13: #3F9C8A;
+        --c14: #2C7A6B;
+      }
+
+      [data-theme="bloom"] {
+        --c2: #FFF3E9;
+        --c3: #FF6F59;
+        --c4: #E5483A;
+        --c5: #FFC94A;
+        --c6: #FFA726;
+        --c7: #FF8FB1;
+        --c8: #ffffff;
+        --c9: #8E5CE0;
+        --c10: #6A3FC0;
+        --c11: #FFE0C2;
+        --c12: #FFC48A;
+        --c13: #5FC9E8;
+        --c14: #2FA3CC;
+      }
+
+      [data-theme="garden"] {
+        --c2: #F5FBEA;
+        --c3: #8FE066;
+        --c4: #4CAF2E;
+        --c5: #FF5733;
+        --c6: #E63E1F;
+        --c7: #FF3EA5;
+        --c8: #E0157F;
+        --c9: #7B2FF7;
+        --c10: #5B1FC7;
+        --c11: #3FC1FF;
+        --c12: #1A9FE0;
+        --c13: #FFD500;
+        --c14: #F2B705;
+      }
+
+      [data-theme="nebula"] {
+        --c2: #F0EBFA;
+        --c3: #3F6FE0;
+        --c4: #2A4FB8;
+        --c5: #FF6EC7;
+        --c6: #E8449F;
+        --c7: #c4f1be;
+        --c8: #c4f1be;
+        --c9: #3D2C8D;
+        --c10: #241A5C;
+        --c11: #E4DBFA;
+        --c12: #C9B8F0;
+        --c13: #FFD93D;
+        --c14: #FFC107;
+      }
+
+      [data-theme="citrus"] {
+        --c2: #FFFBEA;
+        --c3: #00E5FF;
+        --c4: #00B8D4;
+        --c5: #FF9800;
+        --c6: #F57C00;
+        --c7: #FF5252;
+        --c8: #E53935;
+        --c9: #558B2F;
+        --c10: #33691E;
+        --c11: #F4FFB8;
+        --c12: #DCEE7A;
+        --c13: #FFEB3B;
+        --c14: #FBC02D;
+      }
+
+      [data-theme="flamingo"] {
+        --c2: #FFF6EE;
+        --c3: #FF5FA2;
+        --c4: #E0417F;
+        --c5: #FF7043;
+        --c6: #F4511E;
+        --c7: #FFC94D;
+        --c8: #FFAA00;
+        --c9: #5E35B1;
+        --c10: #4527A0;
+        --c11: #D2F6F1;
+        --c12: #8FE3D9;
+        --c13: #00BFA5;
+        --c14: #00897B;
+      }
+
+      [data-theme="neon"] {
+        --c2: #F5EFFF;
+        --c3: #69F0AE;
+        --c4: #00C853;
+        --c5: #FF3D00;
+        --c6: #DD2C00;
+        --c7: #FF00E5;
+        --c8: #D500B8;
+        --c9: #651FFF;
+        --c10: #4A148C;
+        --c11: #00E5FF;
+        --c12: #00B8D4;
+        --c13: #FFEE00;
+        --c14: #E6D600;
+      }
+
+      [data-theme="aurora"] {
+        --c2: #EAF7F5;
+        --c3: #16C79A;
+        --c4: #0E9B79;
+        --c5: #FF3D9A;
+        --c6: #D4127A;
+        --c7: #7B61FF;
+        --c8: #5B3FD9;
+        --c9: #1E3A5F;
+        --c10: #142A45;
+        --c11: #C8F4E9;
+        --c12: #8FE0C9;
+        --c13: #FFC24B;
+        --c14: #F2A100;
+      }
