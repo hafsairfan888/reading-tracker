@@ -1,0 +1,113 @@
+/* Styling for the preview card that displays the generated
+   reading bar and its scale before export, plus the footer below it that
+   holds the show-toggle checkboxes (indicator key, scale) and the
+   Download button. */
+
+      .preview-footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px 22px;
+        margin-top: 16px;
+      }
+
+      .preview-toggles {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 22px;
+        justify-content: center;
+      }
+
+      .preview-toggles .checkline {
+        min-height: auto;
+      }
+
+      #exportArea {
+        background: transparent;
+        padding: 0;
+        margin: 0;
+        border: none;
+      }
+
+      #bar {
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        height: 46px;
+        border: 2px solid var(--c1);
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .segment {
+        position: absolute;
+        top: 0;
+        height: 100%;
+      }
+
+      #scale {
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        height: 34px;
+        margin-top: 2px;
+      }
+
+      .tick {
+        position: absolute;
+        top: 0;
+        width: 0;
+        height: 14px;
+        border-left: 2px solid var(--c1);
+      }
+
+      .label {
+        position: absolute;
+        top: 16px;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        font-size: 11.5px;
+        text-align: center;
+        color: #3a332d;
+        font-weight: 600;
+      }
+
+      .label.first {
+        transform: none;
+      }
+
+      .label.last {
+        transform: translateX(-100%);
+      }
+
+      .indicator-key {
+        display: none;
+        flex-wrap: wrap;
+        gap: 8px 18px;
+        margin-top: 14px;
+        justify-content: center;
+      }
+
+      .key-item {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+      }
+
+      .key-swatch {
+        width: 13px;
+        height: 13px;
+        border-radius: 4px;
+        border: 1.5px solid var(--c1);
+        flex-shrink: 0;
+      }
+
+      .key-name {
+        font-size: 12.5px;
+        font-weight: 600;
+        color: #3a332d;
+        white-space: nowrap;
+      }
+
