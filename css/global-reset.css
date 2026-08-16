@@ -1,0 +1,26 @@
+/* Base/reset styles applied site-wide (box-sizing, html and
+   body defaults) before any other stylesheet is loaded. */
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: 'Poppins', sans-serif;
+        background: var(--c11);
+        color: var(--c1);
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      .wrap {
+        width: 92%;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 22px 90px;
+      }
+

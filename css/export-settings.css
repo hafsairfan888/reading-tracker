@@ -1,0 +1,113 @@
+/* Styling for the export width/height controls found in the
+   Settings panel. */
+
+      .export-controls,
+      .bar-style-controls,
+      .scale-controls {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin-top: 6px;
+      }
+
+      .export-controls label,
+      .bar-style-controls label,
+      .scale-controls label,
+      .checkline {
+        font-size: 12.5px;
+        color: #3a332d;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 600;
+        min-height: 32px;
+      }
+
+      /* Every row's leading text sits in a fixed-width column so every
+         input, select and color swatch lines up underneath the next. */
+      .label-text {
+        flex: 0 0 148px;
+      }
+
+      .label-control {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-weight: 600;
+      }
+
+      .export-controls input[type=number],
+      .bar-style-controls input[type=number],
+      .scale-controls input[type=number] {
+        width: 70px;
+      }
+
+      .export-controls .label-control input[type=number] {
+        width: 90px;
+      }
+
+      .export-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 12px;
+        margin-top: 26px;
+        padding-top: 20px;
+        border-top: 3px dashed var(--c1);
+        flex-wrap: wrap;
+      }
+
+      .checkline input[type=checkbox] {
+        width: 20px;
+        height: 20px;
+        accent-color: var(--c1);
+        cursor: pointer;
+      }
+
+      .settings-group {
+        margin-top: 26px;
+        padding-top: 20px;
+        border-top: 3px dashed var(--c1);
+      }
+
+      .settings-group:first-of-type {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none;
+      }
+
+      .settings-group-title {
+        font-family: 'Fredoka', sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+        color: var(--c1);
+        background: var(--c4);
+        border: 2px solid var(--c1);
+        border-radius: 8px;
+        padding: 4px 12px;
+        display: inline-block;
+        margin: 0 0 16px;
+        box-shadow: 2px 2px 0 var(--c1);
+      }
+
+
+      .settings-subgroup {
+        margin-top: 26px;
+      }
+
+      .settings-subgroup:first-of-type {
+        margin-top: 10px;
+      }
+
+      .settings-subgroup-title {
+        font-family: 'Fredoka', sans-serif;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: .04em;
+        text-transform: uppercase;
+        color: #514840;
+        display: block;
+        margin: 0 0 14px;
+      }
+

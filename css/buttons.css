@@ -1,0 +1,62 @@
+/* Shared styling for buttons and button groups used across
+   the page (e.g. Save, Open, Export, Default). */
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin: 22px 0 4px;
+      }
+
+      .preview-footer .actions {
+        margin: 0;
+      }
+
+      button {
+        font-family: 'Fredoka', sans-serif;
+        cursor: pointer;
+      }
+
+      .btn {
+        padding: 12px 22px;
+        border-radius: 12px;
+        border: 3px solid var(--c1);
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: .03em;
+        text-transform: uppercase;
+        background: #fff;
+        color: var(--c1);
+        box-shadow: var(--shadow-sm);
+        transition: transform .08s ease, box-shadow .08s ease;
+      }
+
+      .btn:hover {
+        transform: translate(-1px, -1px);
+        box-shadow: 4px 4px 0 var(--c1);
+      }
+
+      .btn:active {
+        transform: translate(3px, 3px);
+        box-shadow: none;
+      }
+
+      .btn-gold {
+        background: var(--c4);
+        color: var(--c1);
+      }
+
+      .btn-save {
+        background: #fff;
+        color: var(--c1);
+      }
+
+      .btn-outline {
+        background: #fff;
+        color: var(--c1);
+      }
+
+      .btn-full {
+        width: 100%;
+        text-align: center;
+      }
